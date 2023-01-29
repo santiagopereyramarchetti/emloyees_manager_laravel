@@ -57,7 +57,7 @@
                             </a>
                             <div class="collapse" id="systemManagement" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="{{route('countries.index')}}">
                                         Country
                                     </a>
                                     <a class="nav-link" href="#">
