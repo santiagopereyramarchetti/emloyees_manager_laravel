@@ -60,13 +60,13 @@
                                     <a class="nav-link" href="{{route('countries.index')}}">
                                         Country
                                     </a>
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="{{route('states.index')}}">
                                         State
                                     </a>
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="{{route('cities.index')}}">
                                         City
                                     </a>
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="{{route('deparments.index')}}">
                                         Deparment
                                     </a>
                                 </nav>
