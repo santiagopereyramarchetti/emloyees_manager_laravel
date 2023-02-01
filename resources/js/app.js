@@ -15,9 +15,6 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
-
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -36,4 +33,16 @@ app.component('example-component', ExampleComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+//Vue Componentes
+// import EmployeesIndex from './components/employees/Index.vue'
+// import EmployeesCreate from './components/employees/Create.vue'
+// import EmployeesEdit from './components/employees/Edit.vue'
+
+//Vue Router
+import router from './router/index.js'
+
+app.use(router)
+    // .component('employees-index', EmployeesIndex)
+    // .component('employees-create', EmployeesCreate)
+    // .component('employees-edit', EmployeesEdit)
+    .mount('#app')

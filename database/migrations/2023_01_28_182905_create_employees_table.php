@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('last_name');
-            $table->string('fisrt_name');
+            $table->string('first_name');
             $table->string('middle_name')->nullable();
             $table->string('address');
             $table->foreignId('deparment_id')->constrained();
@@ -24,7 +24,7 @@ return new class extends Migration
             $table->foreignId('state_id')->constrained();
             $table->foreignId('city_id')->constrained();
             $table->string('zip_code');
-            $table->date('birthday')->nullable();
+            $table->date('birthdate')->nullable();
             $table->date('date_hired')->nullable();
             $table->timestamps();
         });
